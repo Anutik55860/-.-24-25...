@@ -1,0 +1,25 @@
+def solve_equation_system(a, b, c, d, e, f):
+    D = a * e - b * d
+    Dx = c * e - b * f
+    Dy = a * f - c * d
+    
+    if D != 0:
+        x = Dx / D
+        y = Dy / D
+        return x, y
+    else:
+        return "Система уравнений вырожденная (определитель равен 0), решение невозможно."
+
+# Коэффициенты уравнений
+a = 9
+b = 6
+c = 7
+d = 9
+e = 1 
+f = 2
+
+# Решение системы уравнений
+solution = solve_equation_system(a, b, c, d, e, f)
+print("Решение системы уравнений:")
+print("x =", solution[0])
+print("y =", solution[1])
