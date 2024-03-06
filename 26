@@ -1,0 +1,8 @@
+int(input("ввести точку y:"))
+int(input("ввести точку x:"))
+def check_upper_half_plane (x,y):
+    if y >= 0: 
+        return "точка лежит в верхней полуплоскости"
+    else:
+        return " точка не лежит в верхней полуплоскости"
+ 
